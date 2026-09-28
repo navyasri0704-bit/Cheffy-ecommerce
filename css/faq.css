@@ -1,0 +1,274 @@
+/* Add your CSS here */
+/* ==========================================
+   FAQ HEADER
+========================================== */
+
+.faq-header{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    padding:60px 20px;
+    text-align:center;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.faq-header h1{
+    font-size:42px;
+    color:#4f8785;
+    margin-bottom:15px;
+}
+
+.faq-header p{
+    color:#666;
+    font-size:17px;
+}
+
+/* ==========================================
+   FAQ CONTAINER
+========================================== */
+
+.faq-container{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+/* ==========================================
+   FAQ ITEM
+========================================== */
+
+.faq-item{
+    background:#fff;
+    margin-bottom:20px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.faq-item:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   QUESTION
+========================================== */
+
+.question{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 25px;
+    cursor:pointer;
+    background:#fff;
+}
+
+.question h3{
+    color:#444;
+    font-size:18px;
+    font-weight:600;
+}
+
+.question i{
+    color:#4f8785;
+    font-size:18px;
+    transition:.3s;
+}
+
+/* ==========================================
+   ANSWER
+========================================== */
+
+.answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+    background:#f9f9f9;
+}
+
+.answer p{
+    padding:20px 25px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* ==========================================
+   ACTIVE FAQ
+========================================== */
+
+.faq-item.active .answer{
+    max-height:250px;
+}
+
+.faq-item.active .question{
+    background:#4f8785;
+}
+
+.faq-item.active .question h3{
+    color:white;
+}
+
+.faq-item.active .question i{
+    color:white;
+    transform:rotate(45deg);
+}
+
+/* ==========================================
+   CONTACT BOX
+========================================== */
+
+.help-box{
+    width:90%;
+    max-width:900px;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.help-box h2{
+    color:#4f8785;
+    margin-bottom:15px;
+}
+
+.help-box p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.help-box a{
+    display:inline-block;
+    padding:14px 30px;
+    background:#4f8785;
+    color:white;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.help-box a:hover{
+    background:#356d6b;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.faq-item{
+    animation:fadeUp .6s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.question h3{
+
+    font-size:17px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.faq-header{
+
+    padding:40px 20px;
+
+}
+
+.faq-header h1{
+
+    font-size:32px;
+
+}
+
+.faq-header p{
+
+    font-size:15px;
+
+}
+
+.question{
+
+    padding:18px;
+
+}
+
+.question h3{
+
+    font-size:16px;
+
+}
+
+.answer p{
+
+    padding:18px;
+
+}
+
+.help-box{
+
+    padding:30px 20px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.faq-header h1{
+
+    font-size:26px;
+
+}
+
+.question h3{
+
+    font-size:15px;
+
+}
+
+.question i{
+
+    font-size:16px;
+
+}
+
+.answer p{
+
+    font-size:14px;
+
+}
+
+.help-box h2{
+
+    font-size:22px;
+
+}
+
+}

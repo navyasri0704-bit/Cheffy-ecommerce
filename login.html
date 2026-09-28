@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CHEFFY | Login</title>
+
+    <!-- Login CSS -->
+    <link rel="stylesheet"
+          href="css/login.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="login-wrapper">
+
+
+    <!-- ==========================================
+         LEFT SIDE
+    =========================================== -->
+
+    <div class="login-decoration">
+
+
+        <!-- CHEFFY BRAND -->
+
+        <div class="brand">
+
+            <i class="fa-solid fa-kitchen-set"></i>
+
+            <h1>CHEFFY</h1>
+
+            <p>Your Kitchen Helper</p>
+
+        </div>
+
+
+
+        <!-- WELCOME CONTENT -->
+
+        <div class="welcome-text">
+
+            <span>WELCOME BACK TO CHEFFY</span>
+
+            <h2>
+                Cook better.<br>
+                Shop smarter.
+            </h2>
+
+            <p>
+                Welcome back! Login to your CHEFFY account
+                and continue exploring premium kitchen
+                essentials made for everyday cooking.
+            </p>
+
+
+
+            <!-- FEATURES -->
+
+            <div class="mini-features">
+
+
+                <div>
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                    Secure account
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-basket-shopping"></i>
+
+                    Easy shopping
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Kitchen favourites
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         RIGHT SIDE LOGIN CARD
+    =========================================== -->
+
+    <div class="login-card">
+
+
+        <!-- LOGIN HEADING -->
+
+        <div class="card-heading">
+
+
+            <div class="mobile-logo">
+
+                <i class="fa-solid fa-kitchen-set"></i>
+
+            </div>
+
+
+            <h2>Welcome Back!</h2>
+
+            <p>Login to your CHEFFY account</p>
+
+
+        </div>
+
+
+
+        <!-- ==========================================
+             LOGIN FORM
+        =========================================== -->
+
+        <form id="loginForm">
+
+
+            <!-- USERNAME -->
+
+            <div class="input-group">
+
+                <label for="username">
+                    Username
+                </label>
+
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter your username"
+                        required>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required>
+
+
+                    <!-- SHOW PASSWORD -->
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        id="togglePassword"
+                        aria-label="Show password">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LOGIN BUTTON -->
+
+            <button
+                class="login-btn"
+                type="submit">
+
+                Login
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+
+            <!-- LOGIN MESSAGE -->
+
+            <p
+                id="message"
+                class="message">
+            </p>
+
+
+        </form>
+
+
+
+        <!-- ==========================================
+             REGISTRATION LINK
+        =========================================== -->
+
+        <div class="register-link">
+
+            Don't have an account?
+
+            <a href="registration.html">
+                Create an account
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- LOGIN JAVASCRIPT -->
+
+<script src="js/login.js"></script>
+
+
+</body>
+
+</html>

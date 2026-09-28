@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHEFFY | Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/shop.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <div>
+
+        <i class="fa-solid fa-user"></i>
+
+        <a href="logout.html">Logout</a>
+
+    </div>
+
+    <div>
+
+        🚚 Free Shipping On Orders Over $50
+
+    </div>
+
+    <div>
+
+        <a href="cart.html">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-kitchen-set"></i>
+
+        <h1>CHEFFY</h1>
+
+        <p>Your Kitchen Helper</p>
+
+    </div>
+
+</header>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a class="active" href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li>
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+<!-- ================= SHOP HEADER ================= -->
+
+<section class="shop-header">
+
+<h1>SHOP</h1>
+
+<p>
+
+Discover Premium Kitchen Essentials
+
+</p>
+
+</section>
+
+<!-- ================= FILTERS ================= -->
+
+<section class="shop-tools">
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Search products...">
+
+<select id="category">
+
+<option value="all">All Categories</option>
+
+<option>Cookware</option>
+
+<option>Utensils</option>
+
+<option>Bakeware</option>
+
+<option>Storage</option>
+
+</select>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products">
+
+<div class="product-grid">
+
+<!-- PRODUCT 1 -->
+
+<div class="product-card cookware">
+
+<span class="sale">
+
+SALE
+
+</span>
+
+<img src="images/product1.png">
+
+<h3>Wooden Spoon</h3>
+
+<p>Premium Kitchen Spoon</p>
+
+<h4>$14.99</h4>
+
+<div class="quantity">
+
+<button class="minus">-</button>
+
+<input type="text" value="1" readonly>
+
+<button class="plus">+</button>
+
+</div>
+
+<button class="cart-btn">
+
+Add To Cart
+
+</button>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card cookware">
+
+<img src="images/product2.png">
+
+<h3>Frying Pan</h3>
+
+<p>Non Stick Pan</p>
+
+<h4>$29.99</h4>
+
+<div class="quantity">
+
+<button class="minus">-</button>
+
+<input type="text" value="1" readonly>
+
+<button class="plus">+</button>
+
+</div>
+
+<button class="cart-btn">
+
+Add To Cart
+
+</button>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card utensils">
+
+<img src="images/product3.png">
+
+<h3>Knife Set</h3>
+
+<p>Professional Knife</p>
+
+<h4>$39.99</h4>
+
+<div class="quantity">
+
+<button class="minus">-</button>
+
+<input type="text" value="1" readonly>
+
+<button class="plus">+</button>
+
+</div>
+
+<button class="cart-btn">
+
+Add To Cart
+
+</button>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card bakeware">
+
+<img src="images/product4.png">
+
+<h3>Mixing Bowl</h3>
+
+<p>Steel Mixing Bowl</p>
+
+<h4>$18.99</h4>
+
+<div class="quantity">
+
+<button class="minus">-</button>
+
+<input type="text" value="1" readonly>
+
+<button class="plus">+</button>
+
+</div>
+
+<button class="cart-btn">
+
+Add To Cart
+
+</button>
+
+</div>
+<!-- ================= PRODUCT 5 ================= -->
+
+<div class="product-card storage">
+
+    <img src="images/product5.png" alt="Storage Jar">
+
+    <h3>Storage Jar</h3>
+
+    <p>Airtight Glass Container</p>
+
+    <h4>$16.99</h4>
+
+    <div class="quantity">
+
+        <button class="minus">-</button>
+
+        <input type="text" value="1" readonly>
+
+        <button class="plus">+</button>
+
+    </div>
+
+    <button class="cart-btn">
+        Add To Cart
+    </button>
+
+</div>
+
+<!-- ================= PRODUCT 6 ================= -->
+
+<div class="product-card utensils">
+
+    <span class="sale">SALE</span>
+
+    <img src="images/product6.png" alt="Whisk">
+
+    <h3>Silicone Whisk</h3>
+
+    <p>Heat Resistant</p>
+
+    <h4>$11.99</h4>
+
+    <div class="quantity">
+
+        <button class="minus">-</button>
+
+        <input type="text" value="1" readonly>
+
+        <button class="plus">+</button>
+
+    </div>
+
+    <button class="cart-btn">
+        Add To Cart
+    </button>
+
+</div>
+
+<!-- ================= PRODUCT 7 ================= -->
+
+<div class="product-card cookware">
+
+    <img src="images/product7.png" alt="Sauce Pan">
+
+    <h3>Sauce Pan</h3>
+
+    <p>Premium Stainless Steel</p>
+
+    <h4>$34.99</h4>
+
+    <div class="quantity">
+
+        <button class="minus">-</button>
+
+        <input type="text" value="1" readonly>
+
+        <button class="plus">+</button>
+
+    </div>
+
+    <button class="cart-btn">
+        Add To Cart
+    </button>
+
+</div>
+
+<!-- ================= PRODUCT 8 ================= -->
+
+<div class="product-card bakeware">
+
+    <img src="images/product8.png" alt="Baking Tray">
+
+    <h3>Baking Tray</h3>
+
+    <p>Non-stick Bakeware</p>
+
+    <h4>$24.99</h4>
+
+    <div class="quantity">
+
+        <button class="minus">-</button>
+
+        <input type="text" value="1" readonly>
+
+        <button class="plus">+</button>
+
+    </div>
+
+    <button class="cart-btn">
+        Add To Cart
+    </button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PAGINATION ================= -->
+
+<section class="pagination">
+
+    <button class="page active">1</button>
+
+    <button class="page">2</button>
+
+    <button class="page">3</button>
+
+    <button class="page">
+        <i class="fa-solid fa-angle-right"></i>
+    </button>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>CHEFFY</h2>
+
+            <p>
+                Your trusted kitchen companion providing premium cookware,
+                bakeware, utensils and storage products.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Kitchen Street
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 9876543210
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                support@cheffy.com
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 CHEFFY. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/main.js"></script>
+
+<script src="js/shop.js"></script>
+
+</body>
+
+</html>

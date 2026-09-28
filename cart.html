@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHEFFY | Shopping Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+    <div>
+
+        <i class="fa-solid fa-user"></i>
+
+        <a href="logout.html">Logout</a>
+
+    </div>
+
+    <div>
+
+        🚚 Free Shipping On Orders Over $50
+
+    </div>
+
+    <div>
+
+        <a href="cart.html">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-kitchen-set"></i>
+
+        <h1>CHEFFY</h1>
+
+        <p>Your Kitchen Helper</p>
+
+    </div>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li>
+
+<a class="active" href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+<!-- CART HEADER -->
+
+<section class="cart-header">
+
+<h1>Shopping Cart</h1>
+
+<p>
+
+Review your selected kitchen products.
+
+</p>
+
+</section>
+
+<!-- CART -->
+
+<section class="cart-container">
+
+<div class="cart-table">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+
+<th>Name</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+
+<th>Total</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="cartItems">
+
+<!-- JavaScript Loads Products -->
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="cart-summary">
+
+<h2>Order Summary</h2>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<span id="subtotal">$0.00</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Shipping</span>
+
+<span>$5.00</span>
+
+</div>
+
+<div class="summary-row total">
+
+<span>Total</span>
+
+<span id="grandTotal">$5.00</span>
+
+</div>
+
+<button id="checkoutBtn">
+
+Proceed to Checkout
+
+</button>
+
+<button id="clearCart">
+
+Clear Cart
+
+</button>
+
+</div>
+
+</section>
+
+<!-- EMPTY CART -->
+
+<section id="emptyCart" class="empty-cart">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<h2>Your Cart is Empty</h2>
+
+<p>
+
+Looks like you haven't added any products yet.
+
+</p>
+
+<a href="shop.html">
+
+Continue Shopping
+
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h2>CHEFFY</h2>
+
+<p>
+
+Premium Kitchen Essentials For Every Home.
+
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Contact</h3>
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++91 9876543210
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+support@cheffy.com
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+123 Kitchen Street
+
+</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 CHEFFY. All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+
+<script src="js/main.js"></script>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>

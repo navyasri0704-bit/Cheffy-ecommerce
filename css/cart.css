@@ -1,0 +1,225 @@
+/* Add your CSS here */
+/* ===========================
+   CART HEADER
+=========================== */
+
+.cart-header{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    background:#fff;
+    padding:50px 20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.cart-header h1{
+    color:#4f8785;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.cart-header p{
+    color:#666;
+}
+
+/* ===========================
+   CART LAYOUT
+=========================== */
+
+.cart-container{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.cart-table{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#4f8785;
+    color:white;
+}
+
+th,td{
+    padding:18px;
+    text-align:center;
+}
+
+tbody tr{
+    border-bottom:1px solid #eee;
+}
+
+tbody img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.remove-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+.remove-btn:hover{
+    background:#b02a37;
+}
+
+/* ===========================
+   SUMMARY
+=========================== */
+
+.cart-summary{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    height:fit-content;
+}
+
+.cart-summary h2{
+    color:#4f8785;
+    margin-bottom:25px;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin:18px 0;
+}
+
+.total{
+    border-top:1px solid #ddd;
+    padding-top:20px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.cart-summary button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+#checkoutBtn{
+    background:#4f8785;
+    color:white;
+}
+
+#checkoutBtn:hover{
+    background:#356d6b;
+}
+
+#clearCart{
+    background:#dc3545;
+    color:white;
+}
+
+#clearCart:hover{
+    background:#b02a37;
+}
+
+/* ===========================
+   EMPTY CART
+=========================== */
+
+.empty-cart{
+    display:none;
+    width:90%;
+    max-width:700px;
+    margin:80px auto;
+    background:white;
+    text-align:center;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.empty-cart i{
+    font-size:70px;
+    color:#4f8785;
+}
+
+.empty-cart h2{
+    margin:20px 0;
+}
+
+.empty-cart a{
+    display:inline-block;
+    margin-top:25px;
+    background:#4f8785;
+    color:white;
+    padding:14px 30px;
+    border-radius:30px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.cart-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+table{
+    font-size:14px;
+}
+
+th,td{
+    padding:10px;
+}
+
+tbody img{
+    width:60px;
+    height:60px;
+}
+
+.cart-summary{
+    padding:20px;
+}
+
+}
+
+@media(max-width:500px){
+
+.cart-header h1{
+    font-size:30px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}

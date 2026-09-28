@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f766e,
+        #134e4a
+    );
+
+    padding: 20px;
+}
+
+.logout-wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+
+.logout-card {
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 50px 40px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.20);
+
+    animation: cardAppear 0.6s ease;
+}
+
+.logout-icon {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e6f7f5;
+
+    color: #0f766e;
+
+    font-size: 36px;
+}
+
+.logout-card h1 {
+    font-size: 30px;
+
+    color: #0f766e;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.logout-card h2 {
+    font-size: 23px;
+
+    color: #222;
+
+    margin-bottom: 12px;
+}
+
+.logout-card p {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.logout-buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.logout-buttons a {
+    text-decoration: none;
+
+    padding: 13px 20px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: #0f766e;
+
+    color: #ffffff;
+}
+
+.login-btn:hover {
+    background: #0b5f59;
+
+    transform: translateY(-2px);
+}
+
+.home-btn {
+    border: 1px solid #0f766e;
+
+    color: #0f766e;
+
+    background: #ffffff;
+}
+
+.home-btn:hover {
+    background: #e6f7f5;
+
+    transform: translateY(-2px);
+}
+
+.logout-buttons i {
+    margin-right: 7px;
+}
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .logout-card {
+        padding: 40px 25px;
+    }
+
+    .logout-card h2 {
+        font-size: 20px;
+    }
+
+}
